@@ -16,11 +16,14 @@ public class App {
         System.out.print("\nDurante o atendimento siga minhas instruções");
 
         System.out.printf("\nPrimeiramente informe seu primeiro nome: ");
-        nome_usuario = scanner.next();
-
+        nome_usuario = scanner.nextLine();
+        
         System.out.printf("\nOlá %s, como posso lhe ajudar? ", nome_usuario);
-        duvida_usuario = scanner.next();
+        duvida_usuario = scanner.nextLine();
 
+        // Também é possivel realizar o mesmo processo com texto concatenado, segue abaixo
+        //System.out.println("Sua resposta foi: " + duvida_usuario);
+        
         System.out.printf("\nUsuario: %s",nome_usuario);
         System.out.printf("\nDuvida: %s", duvida_usuario);
         
